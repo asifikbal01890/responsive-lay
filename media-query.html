@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 30px;
+        }
+
+        .food-item {
+            border: 1px solid gray;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        @media screen and (max-width: 576px) {
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        @media screen and (min-width: 576px) and (max-width:768px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width:992px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- .container>.food-item*12>img[src="food.avif"]+h3{Food Name-$}+p{price=$00}+p -->
+    <div class="container">
+        <div class="food-item">
+            <img src="food.avif" alt="">
+            <h3>Food Name-1</h3>
+            <p>price=100</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aperiam pariatur praesentium accusamus
+                explicabo consectetur cupiditate molestiae sit obcaecati at velit incidunt in neque amet aliquid vitae
+                omnis, suscipit alias cumque! Labore possimus illum, fugit, eum voluptatem iusto ab accusantium modi vel
+                libero eaque molestiae ducimus ullam, tempora maxime debitis!</p>
+        </div>
+        <div class="food-item">
+            <img src="food.avif" alt="">
+            <h3>Food Name-2</h3>
+            <p>price=200</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aperiam pariatur praesentium accusamus
+                explicabo consectetur cupiditate molestiae sit obcaecati at velit incidunt in neque amet aliquid vitae
+                omnis, suscipit alias cumque! Labore possimus illum, fugit, eum voluptatem iusto ab accusantium modi vel
+                libero eaque molestiae ducimus ullam, tempora maxime debitis!</p>
+        </div>
+        <div class="food-item">
+            <img src="food.avif" alt="">
+            <h3>Food Name-3</h3>
+            <p>price=300</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aperiam pariatur praesentium accusamus
+                explicabo consectetur cupiditate molestiae sit obcaecati at velit incidunt in neque amet aliquid vitae
+                omnis, suscipit alias cumque! Labore possimus illum, fugit, eum voluptatem iusto ab accusantium modi vel
+                libero eaque molestiae ducimus ullam, tempora maxime debitis!</p>
+        </div>
+        <div class="food-item">
+            <img src="food.avif" alt="">
+            <h3>Food Name-4</h3>
+            <p>price=400</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aperiam pariatur praesentium accusamus
+                explicabo consectetur cupiditate molestiae sit obcaecati at velit incidunt in neque amet aliquid vitae
+                omnis, suscipit alias cumque! Labore possimus illum, fugit, eum voluptatem iusto ab accusantium modi vel
+                libero eaque molestiae ducimus ullam, tempora maxime debitis!</p>
+        </div>
+        <div class="food-item">
+            <img src="food.avif" alt="">
+            <h3>Food Name-5</h3>
+            <p>price=500</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aperiam pariatur praesentium accusamus
+                explicabo consectetur cupiditate molestiae sit obcaecati at velit incidunt in neque amet aliquid vitae
+                omnis, suscipit alias cumque! Labore possimus illum, fugit, eum voluptatem iusto ab accusantium modi vel
+                libero eaque molestiae ducimus ullam, tempora maxime debitis!</p>
+        </div>
+        <div class="food-item">
+            <img src="food.avif" alt="">
+            <h3>Food Name-6</h3>
+            <p>price=600</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aperiam pariatur praesentium accusamus
+                explicabo consectetur cupiditate molestiae sit obcaecati at velit incidunt in neque amet aliquid vitae
+                omnis, suscipit alias cumque! Labore possimus illum, fugit, eum voluptatem iusto ab accusantium modi vel
+                libero eaque molestiae ducimus ullam, tempora maxime debitis!</p>
+        </div>
+        <div class="food-item">
+            <img src="food.avif" alt="">
+            <h3>Food Name-7</h3>
+            <p>price=700</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aperiam pariatur praesentium accusamus
+                explicabo consectetur cupiditate molestiae sit obcaecati at velit incidunt in neque amet aliquid vitae
+                omnis, suscipit alias cumque! Labore possimus illum, fugit, eum voluptatem iusto ab accusantium modi vel
+                libero eaque molestiae ducimus ullam, tempora maxime debitis!</p>
+        </div>
+        <div class="food-item">
+            <img src="food.avif" alt="">
+            <h3>Food Name-8</h3>
+            <p>price=800</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aperiam pariatur praesentium accusamus
+                explicabo consectetur cupiditate molestiae sit obcaecati at velit incidunt in neque amet aliquid vitae
+                omnis, suscipit alias cumque! Labore possimus illum, fugit, eum voluptatem iusto ab accusantium modi vel
+                libero eaque molestiae ducimus ullam, tempora maxime debitis!</p>
+        </div>
+        <div class="food-item">
+            <img src="food.avif" alt="">
+            <h3>Food Name-9</h3>
+            <p>price=900</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aperiam pariatur praesentium accusamus
+                explicabo consectetur cupiditate molestiae sit obcaecati at velit incidunt in neque amet aliquid vitae
+                omnis, suscipit alias cumque! Labore possimus illum, fugit, eum voluptatem iusto ab accusantium modi vel
+                libero eaque molestiae ducimus ullam, tempora maxime debitis!</p>
+        </div>
+        <div class="food-item">
+            <img src="food.avif" alt="">
+            <h3>Food Name-10</h3>
+            <p>price=1000</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aperiam pariatur praesentium accusamus
+                explicabo consectetur cupiditate molestiae sit obcaecati at velit incidunt in neque amet aliquid vitae
+                omnis, suscipit alias cumque! Labore possimus illum, fugit, eum voluptatem iusto ab accusantium modi vel
+                libero eaque molestiae ducimus ullam, tempora maxime debitis!</p>
+        </div>
+        <div class="food-item">
+            <img src="food.avif" alt="">
+            <h3>Food Name-11</h3>
+            <p>price=1100</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aperiam pariatur praesentium accusamus
+                explicabo consectetur cupiditate molestiae sit obcaecati at velit incidunt in neque amet aliquid vitae
+                omnis, suscipit alias cumque! Labore possimus illum, fugit, eum voluptatem iusto ab accusantium modi vel
+                libero eaque molestiae ducimus ullam, tempora maxime debitis!</p>
+        </div>
+        <div class="food-item">
+            <img src="food.avif" alt="">
+            <h3>Food Name-12</h3>
+            <p>price=1200</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aperiam pariatur praesentium accusamus
+                explicabo consectetur cupiditate molestiae sit obcaecati at velit incidunt in neque amet aliquid vitae
+                omnis, suscipit alias cumque! Labore possimus illum, fugit, eum voluptatem iusto ab accusantium modi vel
+                libero eaque molestiae ducimus ullam, tempora maxime debitis!</p>
+        </div>
+    </div>
+</body>
+
+</html>
